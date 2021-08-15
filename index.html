@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+  
+        <h1 id="title">On-Demand Streaming Services Survey</h1>
+        <p id="description">A survey on how you prefer your online entertainment</p>
+        <form id="survey-form">
+          <label for="name" id="name-label">Name:</label>
+          <input type="text" id="name" name="input" placeholder="Enter your Full Name" required>
+          <label for="email" id="email-label"> Email: </label>
+          <input type="email" id="email" name="input" placeholder="example@email.com" required>
+          <label for="number" id="number-label"> Age: </label>
+          <input type="number" id="number" name="input" placeholder="Enter your age" min="5" max="70" required>
+          <label>How Often Do you stream for shows/movies(films) per week?</label>
+          <select id="dropdown">
+            <option value="daily"> --Choose Appropriate Response--</option>
+            <option value="daily"> Daily</option>
+            <option value="daily"> Twice</option>
+            <option value="daily"> Thrice</option>
+            <option value="daily"> Alternate Days</option>
+            <option value="daily"> Occassionally (no consistent pattern)</option>
+            <option value="never"> Never</option>
+          </select>
+          <label>Which Platform(s) Do you prefer?</label>
+          <label><input type="Checkbox" value="Netflix" name="preferred">Netflix</label>
+          <label><input type="Checkbox" value="youtube" name="preferred">Youtube</label>
+          <label><input type="Checkbox" value="showmax" name="preferred">ShowMax</label>
+          <label><input type="Checkbox" value="amazon-prime" name="preferred">Amazon Prime</label>
+          <label><input type="Checkbox" value="viusasa" name="preferred">Viusasa</label>
+          <label><input type="Checkbox" value="base" name="preferred">Base By Safaricom</label>
+          <label> <input type="checkbox" name="preferred" value="other">Other (Check To activate input field)</label>
+          <input type="text" name="input" id="other-preference" placeholder="Include any other Preference not in the list" readonly>
+          <label> For the platform(s) you prefer, do they support comments?</label>
+          <label><input type="radio" name="comments" value="yes">Yes</label>
+          <label><input type="radio" name="comments" value="no">No</label>
+          <label> What is your general streaming Experience and how do you think content streaming can be improved</label>
+          <textarea rows="6.75"></textarea>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </main>
+</body>
+</html>

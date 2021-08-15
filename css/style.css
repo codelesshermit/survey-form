@@ -1,0 +1,57 @@
+html{
+    font-size: 62.5%;
+  }
+  body{
+    font-size: 1.6rem;
+    font-family: tahoma, serif;
+    margin: 0;
+  }
+  main{
+    width:100%;
+    margin:auto;
+    padding:2rem;
+    background-image: url("")
+  }
+  h1, p{
+    text-align: center;
+  }
+  #survey-form{
+    display: block;
+    width: 75%;
+    margin: 2rem auto;
+    padding:1rem;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  #survey-form input[name="input"], select{
+    width: 92.5%;
+    margin:0.5rem;
+    padding: 0.75rem;
+    outline: none !important;
+  }
+  #survey-form label, #survey-form input{
+    display:flex;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+  #survey-form textarea{
+    width: 92.5%;
+    margin: 0.5rem;
+    padding: 0.5rem
+  }
+  button{
+    width: 95%;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    background-color: #32cd32;
+    border: 0.1rem solid #32cd32;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: 789px){
+     #survey-form{
+       width: 60%;
+     } 
+  }
+  
